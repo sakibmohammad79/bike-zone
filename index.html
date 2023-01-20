@@ -20,7 +20,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand fs-3 fw-bolder" href="#">Bike Dekho</a>
+              <a class="navbar-brand fs-2 fw-bolder text-danger" href="#">Bike Dekho</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -39,7 +39,7 @@
                     <a class="nav-link" href="#">CONTACT</a>
                   </li>
                 </ul>
-                  <button class="btn btn-outline-success fw-semibold" type="submit">Login</button>
+                  <button class="btn btn-outline-success fw-semibold login-btn" type="submit">Login</button>
                 </form>
               </div>
             </div>
@@ -105,9 +105,9 @@
 
     <main>
         <!-- hot bike section -->
-        <section class="mt-5 text-center text-md-center p-4">
+        <section class="mt-5 text-center text-md-center p-4 rounded">
             <div>
-            <h1 class="fw-bolder">Fetured Bikes In This Year</h1>
+            <h1 class="fw-bolder">Fetured Bikes <span class="text-danger">In This Year</span></h1>
             <p class="fw-bolder">Best bike collection</p>
             <hr class="w-25 mx-auto border-danger">
             </div>
@@ -126,7 +126,7 @@
 
         <!-- Latest news -->
         <section class="mt-5 bg-info bg-opacity-25">
-            <h1 class=" text-center fw-bolder pt-5 pb-3">latest News</h1>
+            <h1 class=" text-center fw-bolder pt-5 pb-3">latest <span class="text-danger">News</span></h1>
             <div class="row row-cols-1 row-cols-md-3 g-4 px-3">
                 <div class="col">
                   <div class="card h-100 rounded-4">
@@ -142,7 +142,7 @@
                 </div>
                 <div class="col">
                   <div class="card h-100 rounded-4">
-                    <img src="images/Bike 2.png" class="card-img-top" alt="...">
+                    <img src="images/bike-2.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -168,9 +168,9 @@
         </section>
 
         <!-- client section -->
-        <section class="mt-5">
+        <section class="mt-5 bg-secondary-subtle rounded p-5">
           <h1 class="fw-bolder text-center pb-4">Happy <span class="text-danger">Client Says</span></h1>
-          <div class="row row-cols-1 row-cols-md-3 g-4 text-center p-5">
+          <div class="row row-cols-1 row-cols-md-3 g-4 text-center pb-4">
             <div class="col">
               <div class="card">
                 <img src="images/user-1.png" class="card-img-top w-25 mx-auto pt-3" alt="...">
@@ -227,10 +227,65 @@
             </div>
           </div>
         </section>
+
+        <!-- question section -->
+        <section class="my-5 bg-secondary-subtle rounded">
+          <h1 class="fw-bolder text-center pt-4">Frequently Asked <span class="text-danger">Questions</span></h1>
+          <div class=" p-4 row row-cols-1 row-cols-md-2">
+            <div class="col text-center">
+              <img class="w-50" src="images/faq.png" alt="">
+            </div>
+            <div class="col align-self-center p-4">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
     </main>
 
-    <footer>
-
+    <footer class="bg-dark text-secondary p-5">
+      <div class="row row-cols-1 row-cols-md-2 d-flex ">
+          <div class="col text-md-center">
+             <p>Download Now &nbsp;&nbsp;&nbsp; License</p>
+             <p>About &nbsp;&nbsp;&nbsp; Features &nbsp;&nbsp;&nbsp; Pricing&nbsp;&nbsp;&nbsp; Carrers Help &nbsp;&nbsp;&nbsp;PrivecyPolicy</p>
+             <p>&#9400;2020 bike. All rights reserved</p>
+          </div>
+          <div class="col d-flex flex-column align-items-center">
+             <h3>Get the App</h3>
+             <img class="w-25 pb-3" src="images/android.png" alt="">
+             <img class="w-25" src="images/ios.png" alt="">
+          </div>
+      </div>
     </footer>
     
 

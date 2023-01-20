@@ -4,3 +4,8 @@
 .banner-np-color{
     background-color: rgb(143, 49, 49);
 }
+.login-btn{
+    color: white;
+    background-color: red;
+    border: none;
+}
